@@ -21,6 +21,6 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
-    name: 'Printing Custom Message'
       steps:
-      - run: echo {{ $input.custom_message }}
+      - name: 'Printing Custom Message'
+        run: echo {{ $input.custom_message }}
