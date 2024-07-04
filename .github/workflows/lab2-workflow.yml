@@ -26,5 +26,5 @@ jobs:
         run: echo ${{ inputs.custom_message }}
 
       - name: 'Printing run-job boolean value'
-        run: if ${{ inputs.run-job == 'true'}} 
-              echo ${{ inputs.run-job }}
+        if: ${{ inputs.run-job == 'true'}} 
+        run: echo ${{ inputs.run-job }}
